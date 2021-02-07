@@ -50,12 +50,12 @@ function App() {
     )
   }
 
-  const updateUser = (id, updateUser) => {
+  const updateUser = (id, updatedUser) => {
     setEditing(false);
     
     setUsers(
       users.map(
-      user => (user.id === id ? updateUser: user)
+      user => (user.id === id ? updatedUser : user)
         ))
 
   } 
