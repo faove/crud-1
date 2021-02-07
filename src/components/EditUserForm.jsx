@@ -58,7 +58,7 @@ const EditUserForm = (props) => {
                 errors.username && <span className="text-danger text-small d-block mb-2">{errors.username.message}</span>
             }
             </div>
-            <button type="submit" updateUser={props.updateUser.id}>Edit user</button>
+            <button type="submit" onClick={props.updateUser.id}>Edit user</button>
         </form>
         </Fragment>
      );
